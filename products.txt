@@ -1,0 +1,8 @@
+Orion Studio;https://www.thomann.de/de/antelope_orion_studio.htm;th
+Goliath;https://www.thomann.de/de/antelope_goliath.htm;th
+Zen Tour;https://www.thomann.de/de/antelope_zen_tour.htm;th
+Orion 32;https://www.thomann.de/de/antelope_orion_32_2.htm;usb
+Zen Studio+;https://www.thomann.de/de/prod_AR_410019.html;th
+Orion 32 HD;https://www.thomann.de/de/antelope_orion_32_hd.htm;usb
+Clarett 8PreX;https://www.thomann.de/de/focusrite_clarett_8prex.htm;th
+Apollo Twin USB Duo;https://www.thomann.de/de/universal_audio_apollo_twin_usb_duo.htm;usb
