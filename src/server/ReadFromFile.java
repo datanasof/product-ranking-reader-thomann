@@ -26,5 +26,19 @@ public class ReadFromFile {
 		System.out.printf("Reading complete. A total of %s products should be checked", plist.size());
 		return plist;
 	}
-	
+	public static String[] readRecipients(String filename) throws IOException{		
+		BufferedReader br = new BufferedReader(new FileReader(filename));
+		try {
+			String line = br.readLine();
+		    String[] sline = line.split(";");  //(sline[0],sline[1], sline[2])
+		    return sline;	
+		    
+		} finally {
+		    br.close();
+		}
+	}
+		
 }
+	
+	
+

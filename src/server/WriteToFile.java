@@ -9,7 +9,7 @@ import java.util.GregorianCalendar;
 
 public class WriteToFile {
 	
-	public static void write(String filepath, String textToAdd, int position) throws IOException{
+	public static String write(String filepath, String textToAdd, int position, String price) throws IOException{
 		File f = new File(filepath);
 		if(!f.exists()) { 
 			f.createNewFile(); // if file already exists will do nothing 
@@ -19,8 +19,10 @@ public class WriteToFile {
 		Date time=new GregorianCalendar().getTime();
 		Writer output;
 		output = new BufferedWriter(new FileWriter(filepath, true));  //clears file every time
-		output.append(time + ": " + textToAdd + "; Category position = "+ position + "\r\n");
+		String result = time + "// " + textToAdd + "; Category position = "+ position + "; Price(EUR) = " + price + "\r\n";
+		output.append(result);
 		output.close();
+		return result;
 	}
 	
 	public static void mkDirForReports(){

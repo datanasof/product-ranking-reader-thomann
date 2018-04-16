@@ -7,6 +7,7 @@ public class Product {
 	private String ranking;
 	private String fileName;
 	private String[] categoryURL;
+	private String price;
 	
 	public Product(String name, String url, String type){
 		this.name = name;
@@ -16,6 +17,7 @@ public class Product {
 		this.fileName = Credentials.reportFilePath + name + ".txt";
 		if(type.equals("th")) this.categoryURL = Credentials.THcategory;
 		else if(type.equals("usb")) this.categoryURL = Credentials.USBcategory;
+		this.price = "";
 	}
 
 	public String getName() {
@@ -64,6 +66,14 @@ public class Product {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public String getPrice() {
+		return price;
+	}
+
+	public void setPrice(String price) {
+		this.price = price;
 	}
 	
 }
